@@ -19,3 +19,11 @@ A Django-based **Back-End Capstone Project** implementing **Menu and Booking API
    ```bash
    git clone https://github.com/ii5ii/Capstone-project.git
    cd Capstone-project
+2. **Virtual Environment**
+   '''bash
+   # Create virtual environment
+   python -m venv .venv
+   # Activate on macOS/Linux
+   source .venv/bin/activate
+   # Activate on Windows
+   .venv\Scripts\activate
