@@ -18,15 +18,15 @@ from django.contrib import admin
 from django.urls import path,include
 from rest_framework.routers import DefaultRouter
 from Restaurant.views import BookingViewSet, UserViewSet
-from django.views.generic import RedirectView
+
 
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("restaurant/", include("Restaurant.urls")),
     path("restaurant/menu/", include("Restaurant.urls")),
     path("restaurant/booking/", include("Restaurant.urls")),
-    path('api-auth/', include('rest_framework.urls')),
-    path('api-auth/', RedirectView.as_view(url='/api-auth/login/')),
+    path("auth/", include('djoser.urls')),
+    path("auth/", include('djoser.urls.authtoken')),
 ]
 # create Router & register BookingViewSet
 router = DefaultRouter()
