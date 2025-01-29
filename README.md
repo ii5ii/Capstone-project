@@ -1,10 +1,10 @@
-### Little Lemon API
+## Little Lemon API
 
 A Django-based Back-End Capstone Project implementing Menu and Booking APIs with authentication and unit testing.
 
 ---
 
-#### Features
+### Features
 - **Menu API:** CRUD operations for menu items.
 - **Booking API:** Manage table reservations.
 - **Authentication:** User registration, login, and token-based authentication via Djoser.
@@ -13,7 +13,7 @@ A Django-based Back-End Capstone Project implementing Menu and Booking APIs with
 
 ---
 
-#### Setup Instructions
+### Setup Instructions
 **Clone the Repository**
    ```sh
    git clone https://github.com/ii5ii/Capstone-project.git
@@ -58,7 +58,7 @@ A Django-based Back-End Capstone Project implementing Menu and Booking APIs with
   http://127.0.0.1:8000/admin/
   ```
 ---
-#### API Endpoints
+### API Endpoints
 
 #### Authentication (Djoser)
 
