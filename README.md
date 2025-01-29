@@ -1,6 +1,6 @@
-## Little Lemon API
+## LittleLemon API
 
-A Django-based Back-End Capstone Project implementing Menu and Booking APIs with authentication and unit testing.
+A Django-based Back-End Project implementing Menu and Booking APIs with authentication and unit testing.
 
 ---
 
