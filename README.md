@@ -84,22 +84,22 @@ A Django-based Back-End Project implementing Menu and Booking APIs with authenti
     GET /restaurant/menu/
     ```
 
-- **Create new menu item (Admin only)**:
+- **Create new menu item (Admin only)**
     ```http
     POST /restaurant/menu/
     ```
 
-- **Retrieve single menu item**:
+- **Retrieve single menu item**
     ```http
     GET /restaurant/menu/{id}/
     ```
 
-- **Update menu item (Admin only)**:
+- **Update menu item (Admin only)**
     ```http
     PUT /restaurant/menu/{id}/
     ```
 
-- **Delete menu item (Admin only)**:
+- **Delete menu item (Admin only)**
     ```http
     DELETE /restaurant/menu/{id}/
     ```
