@@ -29,7 +29,7 @@ A Django-based Back-End Project implementing Menu and Booking APIs with authenti
 **Activate the virtual environment**
   - Windows:
     ```sh
-    myenv\Scripts\activate
+    venv\Scripts\activate
     ```
   - MacOS and Linux:
     ```sh
