@@ -23,7 +23,7 @@ A Django-based Back-End Project implementing Menu and Booking APIs with authenti
 
 **Create a virtual environment**
   ```sh
-  python -m venv myenv
+  python -m venv venv
   ```
 
 **Activate the virtual environment**
@@ -33,7 +33,7 @@ A Django-based Back-End Project implementing Menu and Booking APIs with authenti
     ```
   - MacOS and Linux:
     ```sh
-    source myenv/bin/activate
+    source venv/bin/activate
     ```
 
 **Install dependencies**
