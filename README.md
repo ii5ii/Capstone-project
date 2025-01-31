@@ -38,7 +38,7 @@ A Django-based Back-End Project implementing Menu and Booking APIs with authenti
 
 **Install dependencies**
   ```sh
-  pip install -r requirements.txt
+  pip install -r requirement.txt
   ```
 
 
