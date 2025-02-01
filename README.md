@@ -17,7 +17,7 @@ A Django-based Back-End Project implementing Menu and Booking APIs with authenti
 **Clone the Repository**
    ```sh
    git clone https://github.com/ii5ii/Capstone-project.git
-   cd Capstone-project
+   cd LittleLemon-API 
    ```
 
 

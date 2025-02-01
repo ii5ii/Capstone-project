@@ -17,12 +17,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 from rest_framework.routers import DefaultRouter
-from Restaurant.views import BookingViewSet, UserViewSet
+from Restaurant.views import BookingViewSet,UserViewSet
 
-
+'''
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("restaurant/", include("Restaurant.urls")),
+    #path("restaurant/", include("Restaurant.urls")),
+    #path("", include("Restaurant.urls")),
+    path('', include('Restaurant.urls')),
     path("restaurant/menu/", include("Restaurant.urls")),
     path("restaurant/booking/", include("Restaurant.urls")),
     path("auth/", include('djoser.urls')),
@@ -32,3 +34,21 @@ urlpatterns = [
 router = DefaultRouter()
 router.register(r'tables', BookingViewSet)
 router.register(r'users', UserViewSet)
+'''
+router = DefaultRouter()
+router.register(r'tables', BookingViewSet)
+router.register(r'users', UserViewSet)
+
+urlpatterns = [
+    path("admin/", admin.site.urls),
+
+    # Include restaurant URLs with a namespace
+    path("", include(("Restaurant.urls", "restaurant"), namespace="restaurant")),
+
+    # Auth API
+    path("auth/", include('djoser.urls')),
+    path("auth/", include('djoser.urls.authtoken')),
+
+    # API Routes
+    path("api/", include(router.urls)),
+]
